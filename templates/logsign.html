@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0">
+	<title>Hotel Recommendation System</title>
+	<link rel="stylesheet" href="../static/logsign.css">
+</head>
+
+<body>
+	<div class="container">
+		<div class="slider"></div>
+		<div class="btn">
+			<button class="login">Login</button>
+			<button class="signup">Signup</button>
+		</div>
+
+		<div class="form-section">
+			<form onsubmit="loginbtn(this)">
+				<div class="login-box" id="log">
+					<input type="text" name="username" class="name ele" placeholder="Enter username" required>
+					<input type="password" name="password" class="password ele" placeholder="password" required>
+					<input type="submit" class="clkbtnl" value="Login">
+				</div>
+			</form>
+			<form onsubmit="signupbtn(this)">
+				<div class="signup-box" id="sign">
+					<input type="text" name="username" class="name ele" placeholder="Enter user name" required>
+					<input type="email" id="email" name="email" class="email ele" placeholder="Enter email ID" required>
+					<input type="button" class="clkbtnl" onclick="verification()" value="Verify Email">
+					<input type="password" name="password" class="password ele" placeholder="password" required>
+					<input type="password" name="cpass" class="password ele" placeholder="Confirm password" required>
+					<input type="submit" class="clkbtns" value="Signup">
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<script src="../static/login.js"></script>
+	
+</body>
+</html>

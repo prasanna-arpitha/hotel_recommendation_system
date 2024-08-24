@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Hotel Recommendation System
+        </title>
+    </head>
+    <body style="margin: 30px;padding: 50px;background: url('../static/landingpage.jpg');font-size: 20px;">
+        <div style="background-color: rgba(255,255,255,0.7); padding: 20px; border-radius: 30px;">
+        <form style="display: flex; justify-content: center; align-items: center;flex-direction: column;" method="POST" action="/recommend">
+            <label for="guests">no. of guests</label><br>
+            <input type="number" name="guest" id="guests" placeholder="Enter no. of guests"><br>
+            <label for="Location">Location</label><br>
+            <input type="text" name="location" id="Location" placeholder="Enter location"><br>
+            <label for="Budget">Budget($/day)</label><br>
+            <input type="number" id="Budget" name="Budget" placeholder="enter budget"><br>
+            <label for="amenities">Describe the type of room (Enter needed amenities)</label><br>
+            <textarea name="amenities" id="amenities" cols="100" rows="10" placeholder="Enter amenities"></textarea><br>
+            <input type="submit" value="Search hotels">
+        </form>
+        </div>
+    </body>
+</html>
