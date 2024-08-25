@@ -1,0 +1,33 @@
+html {
+    height: 100%;
+}
+body {
+    background: url('landingpage.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 25px;
+    margin: 0px;
+    height: 100%;
+}
+nav {
+    background-color: #f0f8ff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+#head {
+    display: flex;
+    height: 90%;
+    align-items: center;
+    justify-content: center;
+}
+#head div a {
+    text-decoration: none;
+    background-color: rgb(134, 190, 192);
+    padding: 10px;
+    color: black;
+}
+#head div a:hover {
+    color: white;
+    background-color:rgb(18, 149, 166);
+}
